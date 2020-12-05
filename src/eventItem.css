@@ -1,0 +1,122 @@
+.list-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.date-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.description-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 2;
+    flex-direction: column;
+}
+
+.hours-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contain{
+    padding: 20px;
+}
+
+.decreaseText{
+    opacity: 0.6;
+}
+
+.event-contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 4;
+}
+
+.top-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.seeMore-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.event-description{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 426px) {
+    .list-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .description-container{
+        flex-direction: column;
+    }
+
+    .date-container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex: 0;
+    }
+
+    .event-contain{
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+    }
+
+    .top-block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .event-description{
+        display: none;
+    }
+
+    .hours-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .contain{
+        padding: 2px;
+    }
+
+    .seeMore-container{
+        padding-left: 0px;
+    }
+}
